@@ -1,0 +1,9 @@
+.card-header {
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    /* border-radius: 100px; */
+    background-position: center; 
+    /* background-attachment: fixed; */
+}
