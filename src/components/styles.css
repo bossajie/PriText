@@ -1,9 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.form-control{
+    font-size: 12px;
+    font-family: Montserrat
+    
+}
+
 .card-header {
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    position: relative;
-    /* border-radius: 100px; */
-    background-position: center; 
-    /* background-attachment: fixed; */
+  background-image: url("myimage.png");
+
+  background-position: center center;
+     background-repeat: no-repeat; 
+     -webkit-background-size: auto;
+     -moz-background-size: auto;
+     -o-background-size: auto;
+     background-size: auto;
+    
+}
+
+input[type=text], textarea {
+    outline: none;
+    border: 1px solid #DDDDDD;
+  }
+   
+  .success input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px #28a745;
+    border: 1px solid #28a745;
+  }
+   .error input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px #dc3545;
+    border: 1px solid #dc3545;
+  }
+  .error:focus {
+    box-shadow: 0 0 5px #dc3545;
+    border: 1px solid #dc3545;
+  }
+
+  .success:focus {
+    /* border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6); */
+    box-shadow: 0 0 5px #28a745;
+    border: 1px solid #28a745;
+  }
+  
+
+  .status{
+    font-size: 13px;
+    font-family: Montserrat;
+    margin: auto;
+    margin-top: 10px;
+    color: #28a745;
+    font-weight: bold;
+    
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+  }
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
