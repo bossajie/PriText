@@ -1,3 +1,4 @@
+
 {
   "name": "PriText",
   "version": "1.0.0",
@@ -27,18 +28,21 @@
     "react": "^16.4.1"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^6.4.1",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.27.3",
     "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",
     "react-fontawesome": "^1.6.1",
+    "react-recaptcha": "^2.3.10",
+    "style-loader": "^0.16.0",
     "webpack": "^1.9.8",
     "webpack-cli": "^2.1.3",
-    "webpack-dev-server": "^1.9.0",
-    "css-loader": "^0.27.3",
-    "style-loader": "^0.16.0"
+    "webpack-dev-server": "^1.9.0"
   }
+
 }

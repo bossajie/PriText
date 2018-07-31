@@ -31,6 +31,10 @@ module.exports = {
     devServer:{
         port: 3000,
         contentBase: './public',
-        inline: true
-    }
+        inline: true,
+        headers: { 
+          "Access-Control-Allow-Origin": "*"
+      }
+    },
+
 }
