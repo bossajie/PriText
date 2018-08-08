@@ -5,10 +5,12 @@ import React from 'react'
 import App from './components/App.jsx'
 
 var callback = function () {
-    console.log('Done!!!!');
+    console.log('Done!!!!!');
   };
    
 
 ReactDOM.render(
     <App />,document.getElementById('root')
 )
+
+module.hot.accept(); // This if or the hot-reload

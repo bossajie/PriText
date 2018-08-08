@@ -1,11 +1,12 @@
 import React from 'react'
 const FA = require('react-fontawesome');
-import './styles.css';
+
 var Recaptcha = require('react-recaptcha');
 import prefix from './PH_PrefixNumbers'
 import axios from 'axios'
 import APIKEY from './API_KEY';
-
+// var request = require('request');
+import request from "superagent";
 
 
 const MAX_MESSAGE = 100
@@ -65,23 +66,32 @@ export default class App extends React.Component{
 
     // SENT THE MESSAGE NOW!
     onSubmitHandle(e){
-        axios.post('https://www.itexmo.com/php_api/api.php',{
-                "1": this.state.number,
-                "2": this.state.message,
-                "3": APIKEY,
-        }).then((res=>{
-            console.log(res)
-        }))
+        const payload ={
+            "1": this.state.number,
+            "2": this.state.message,
+            "3": APIKEY,
+        }
+        request
+        .post('https://www.itexmo.com/php_api/api.php')
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .send(payload)
+        .end(function(err, res){
+            if (res.text===0){
+                this.setState({
+                    isError: true,
+                    errorMsg: 'Message Sent!',
+                    number:'',
+                    message:'',
+                    maxLengthMessage:'',
+                })
+                console.log('message sent')
+            }
+            else{
+                alert('message failed')
+            }
+        }); 
 
 
-        this.setState({
-            isError: true,
-            errorMsg: 'Message Sent!',
-            number:'',
-            message:'',
-            maxLengthMessage:'',
-        })
-        console.log('message sent')
     }
 
     reCaptchaOnload(response){
