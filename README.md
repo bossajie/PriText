@@ -6,4 +6,4 @@ Using https://www.itexmo.com API (Free Trial) as of now. 10 SMS per day, and API
 ## DEMO
 Demo here: https://pritext.netlify.com/
 
-Demo video here: (youtube link) 
+Demo video here: https://youtu.be/b4PsYXUV47U
