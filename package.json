@@ -1,47 +1,43 @@
 {
   "name": "PriText",
-  "version": "1.0.0",
-  "description": "Send a text message for Philippines mobile numbers.",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
-  },
-  "babel": {
-    "presets": [
-      "env",
-      "react"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ajiejot/PriText.git"
-  },
-  "author": "ajie",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ajiejot/PriText/issues"
-  },
-  "homepage": "https://github.com/ajiejot/PriText#readme",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
-    "css-loader": "^0.27.3",
-    "file-loader": "^0.11.2",
-    "font-awesome": "^4.7.0",
-    "react-fontawesome": "^1.6.1",
-    "react-hot-loader": "^4.3.3",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.0.1",
+    "react-fontawesome": "^1.5.0",
     "react-recaptcha": "^2.3.10",
     "style-loader": "^0.16.0",
     "superagent": "^3.8.3",
-    "webpack": "^4.15.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "css-loader": "^0.27.3",
+    "file-loader": "^0.11.2",
+    "font-awesome": "^4.7.0",
+    "eslint-utils": "^1.4.2",
+    "eslint": "3.19.0",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-react": "7.0.1"
   },
-  "devDependencies": {
-    "babel-preset-env": "^1.7.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
