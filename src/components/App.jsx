@@ -1,16 +1,11 @@
 import React from 'react'
-const FA = require('react-fontawesome');
-
-var Recaptcha = require('react-recaptcha');
 import prefix from './PH_PrefixNumbers'
-import axios from 'axios'
 import APIKEY from './API_KEY';
-// var request = require('request');
+// please put your API KEY
 import request from "superagent";
-
-
+const FA = require('react-fontawesome');
+var Recaptcha = require('react-recaptcha');
 const MAX_MESSAGE = 100
-
 export default class App extends React.Component{
 
     constructor(props){

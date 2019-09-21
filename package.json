@@ -11,13 +11,13 @@
     "react-recaptcha": "^2.3.10",
     "style-loader": "^0.16.0",
     "superagent": "^3.8.3",
-    "css-loader": "^0.27.3",
     "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",
-    "eslint-utils": "^1.4.2",
-    "eslint": "3.19.0",
-    "eslint-plugin-jsx-a11y": "5.0.3",
-    "eslint-plugin-react": "7.0.1"
+    "browserslist": "4.6.2"
+  },
+  "resolutions": {
+    "browserslist": "4.6.2",
+    "caniuse-lite": "1.0.30000974"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.14.3"
   }
 }
