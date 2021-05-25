@@ -13,10 +13,10 @@
     "superagent": "^3.8.3",
     "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",
-    "browserslist": "4.6.2"
+    "browserslist": "4.16.5"
   },
   "resolutions": {
-    "browserslist": "4.6.2",
+    "browserslist": "4.16.5",
     "caniuse-lite": "1.0.30000974"
   },
   "scripts": {
